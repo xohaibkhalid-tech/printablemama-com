@@ -1,0 +1,31 @@
+# PrintableMama.com — auto-deploy to shared hosting via FTP
+# SAFE: upload-only. Never deletes files on the server that are not in the repo.
+
+name: Deploy to shared hosting (FTP)
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ftp-deploy:
+    name: FTP Deploy (upload-only)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Upload changed files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /public_html/
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.github/**
+            README.md
