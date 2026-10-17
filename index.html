@@ -1,132 +1,710 @@
 <!DOCTYPE html>
-<html lang="en-us"
-    prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
-
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <style type="text/css">
-        @charset "UTF-8";
-
-        [ng\:cloak],
-        [ng-cloak],
-        [data-ng-cloak],
-        [x-ng-cloak],
-        .ng-cloak,
-        .x-ng-cloak,
-        .ng-hide:not(.ng-hide-animate) {
-            display: none !important;
-        }
-
-        ng\:form {
-            display: block;
-        }
-
-        .ng-animate-shim {
-            visibility: hidden;
-        }
-
-        .ng-anchor {
-            position: absolute;
-        }
-    </style>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>This Page Does Not Exist</title>
-    <meta name="description" content="Oops, looks like the page is lost.">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,300i,400,400i,600,600i,700,700i,800,800i"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,600,600i,700,700i,800,800i"
-        rel="stylesheet">
-
-    <script type="text/javascript" async=""
-        src="https://www.googletagmanager.com/gtag/js?id=G-9Q6H0QETRF&amp;cx=c&amp;_slc=1"></script>
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-26575989-46', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-DW5LWKNPNT"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DW5LWKNPNT');</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"PrintableMama","url":"https://printablemama.com/","description":"Free printable calendars, planners, coloring pages and learning tools.","inLanguage":["en","pt-BR"]}</script><link rel="alternate" hreflang="en" href="https://printablemama.com/index.html" />
-</head>
-
-<body>
-    <iframe allow="join-ad-interest-group" data-tagging-id="G-9Q6H0QETRF" data-load-time="1744709464093" height="0"
-        width="0"
-        src="https://td.doubleclick.net/td/ga/rul?tid=G-9Q6H0QETRF&amp;gacid=1669583486.1744709463&amp;gtm=45je54b0v9125959112za200&amp;dma=1&amp;dma_cps=syphamo&amp;gcd=13l3lPl2l2l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=102509683~102803279~102813109~102887800~102926062~103021830~103027016~103051953~103055465~103077950&amp;z=2108504389"
-        style="display: none; visibility: hidden;">
-    </iframe>
-    <div class="page-not-found">
-        <img class="image" alt="Page Not Found" src="/htdocs_error/page_not_found.svg" />
-        <h1 class="title">This Page Does Not Exist</h1>
-        <p class="text">
-            Sorry, the page you are looking for could not be found. It's just an
-            accident that was not intentional.
-        </p>
-    </div>
-
-</body>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Free Printables for Organized Living | PrintableMama</title>
+<meta name="description" content="Free printable calendars, planners, business forms and learning tools for adults and families. Download and print in seconds.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PrintableMama">
+<meta property="og:title" content="Free Printables for Organized Living | PrintableMama">
+<meta property="og:description" content="Free printable calendars, planners, business forms and learning tools for adults and families. Download and print in seconds.">
+<meta property="og:image" content="https://printablemama.com/images/hero-homepage.jpg">
+<meta property="og:url" content="https://printablemama.com/index.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Printables for Organized Living | PrintableMama">
+<meta name="twitter:description" content="Free printable calendars, planners, business forms and learning tools for adults and families. Download and print in seconds.">
+<meta name="twitter:image" content="https://printablemama.com/images/hero-homepage.jpg">
+<link rel="canonical" href="https://printablemama.com/">
 <style>
-    body {
-        color: #1d1e20;
-        background: #f4f5ff;
+/* PM-DESIGN-v12 */
+/* PrintableMama design tokens — v12 foundation */
+:root{  --coral:#1B4D3E;--coral-d:#143A2F;--teal:#C67B5C;--teal-d:#A96645;--yellow:#C67B5C;--peach:#F5EFE8;--mint:#EDE8E0;
+  --cream:#FDFCFB;
+  --ink:#1A2332;
+  --primary:#1B4D3E;
+  --primary-d:#143A2F;
+  --accent:#C67B5C;
+  --accent-d:#A96645;
+  --muted:#6B7280;
+  --line:#E8E0D5;
+  --card:#ffffff;
+  --shadow:0 10px 30px rgba(27,77,62,.10);
+}
+/* PrintableMama card system — v12 foundation */
+.pm-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:20px;
+}
+.pm-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:12px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  transition:transform .18s ease,box-shadow .18s ease;
+  text-decoration:none;
+  color:var(--ink);
+}
+.pm-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 16px 40px rgba(27,77,62,.16);
+}
+.pm-thumb{
+  aspect-ratio:4/3;
+  background:linear-gradient(135deg,var(--primary) 0%,var(--primary-d) 100%);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  position:relative;
+}
+.pm-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.pm-thumb-letter{
+  font-family:'Playfair Display',Georgia,serif;
+  font-weight:800;
+  font-size:64px;
+  color:rgba(255,255,255,.9);
+  line-height:1;
+}
+.pm-body{
+  padding:14px 16px 16px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  flex:1;
+}
+.pm-avatar-row{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:13px;
+  font-weight:600;
+  color:var(--muted);
+}
+.pm-avatar{
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:var(--primary);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.5px;
+  flex:none;
+}
+.pm-title{
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:18px;
+  font-weight:700;
+  line-height:1.3;
+  margin:0;
+}
+.pm-title a{color:var(--ink);text-decoration:none}
+.pm-title a:hover{color:var(--primary)}
+.pm-stats{
+  display:flex;
+  gap:14px;
+  margin-top:auto;
+  padding-top:8px;
+  border-top:1px solid var(--line);
+  font-size:12.5px;
+  color:var(--muted);
+}
+.pm-stats span{white-space:nowrap}
+.pm-fav{
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.95);
+  cursor:pointer;
+  font-size:16px;
+  line-height:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:0;
+  transition:transform .15s ease;
+  z-index:2;
+}
+.pm-fav:hover{transform:scale(1.1)}
+.pm-fav .heart-empty{color:var(--muted)}
+.pm-fav .heart-full{display:none;color:#C0392B}
+.pm-fav.saved .heart-empty{display:none}
+.pm-fav.saved .heart-full{display:inline}
+/* Homepage shell */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.6;
+}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+/* Sticky header */
+.pm-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(253,252,251,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.pm-header-inner{
+  max-width:1160px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:24px;
+}
+.pm-logo{
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:24px;font-weight:800;color:var(--primary);
+  text-decoration:none;white-space:nowrap;
+}
+.pm-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.pm-nav a{
+  color:var(--ink);text-decoration:none;font-weight:600;font-size:14px;
+  padding:8px 12px;border-radius:8px;
+}
+.pm-nav a:hover{background:#F1EBE1;color:var(--primary)}
+@media(max-width:860px){
+  .pm-nav{display:none}
+}
+/* Hero */
+.pm-hero{
+  background:linear-gradient(180deg,#F7F3EC 0%,var(--cream) 100%);
+  border-bottom:1px solid var(--line);
+  padding:72px 0 64px;
+}
+.pm-hero-kicker{
+  display:inline-block;font-size:13px;font-weight:700;letter-spacing:2px;
+  text-transform:uppercase;color:var(--accent);margin-bottom:14px;
+}
+.pm-hero h1{
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:clamp(34px,5vw,54px);font-weight:800;line-height:1.12;
+  margin-bottom:14px;color:var(--ink);
+}
+.pm-hero p.pm-hero-sub{
+  font-size:18px;color:var(--muted);max-width:620px;margin-bottom:10px;
+}
+.pm-hero-deadline{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:10px 16px;font-weight:600;font-size:15px;margin:14px 0 24px;
+  box-shadow:var(--shadow);
+}
+.pm-hero-deadline strong{color:var(--accent-d)}
+.pm-hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:14px 28px;border-radius:10px;
+  font-weight:700;font-size:16px;text-decoration:none;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:var(--shadow)}
+.btn-primary:hover{background:var(--primary-d);transform:translateY(-2px)}
+.btn-secondary{background:var(--card);color:var(--primary);border:1px solid var(--line)}
+.btn-secondary:hover{border-color:var(--primary);transform:translateY(-2px)}
+/* Sections */
+.pm-section{padding:56px 0 8px}
+.pm-section-head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  margin-bottom:22px;
+}
+.pm-section-head h2{
+  font-family:'Playfair Display',Georgia,serif;
+  font-size:30px;font-weight:800;
+}
+.pm-section-head a{font-weight:600;color:var(--accent-d);text-decoration:none;font-size:14px}
+.pm-section-head a:hover{text-decoration:underline}
+/* Tools grid: compact cards */
+.pm-tools-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:16px;
+}
+.pm-tool-card{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  box-shadow:var(--shadow);padding:20px 16px;text-align:center;
+  text-decoration:none;color:var(--ink);
+  transition:transform .18s ease,box-shadow .18s ease;
+  display:flex;flex-direction:column;gap:10px;align-items:center;
+}
+.pm-tool-card:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(27,77,62,.16)}
+.pm-tool-icon{
+  width:56px;height:56px;border-radius:14px;
+  background:linear-gradient(135deg,var(--primary),var(--primary-d));
+  color:#fff;font-family:'Playfair Display',Georgia,serif;
+  font-size:26px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+}
+.pm-tool-card h3{font-size:15px;font-weight:700;line-height:1.35}
+.pm-tool-card p{font-size:12.5px;color:var(--muted)}
+/* Blog cards */
+.pm-article-excerpt{font-size:14px;color:var(--muted);flex:1}
+.pm-readtime{font-size:12.5px;font-weight:600;color:var(--accent-d)}
+/* New this week strip */
+.pm-strip{
+  background:var(--primary);color:#fff;border-radius:14px;
+  padding:28px 30px;margin:48px 0 8px;
+  box-shadow:var(--shadow);
+}
+.pm-strip h2{
+  font-family:'Playfair Display',Georgia,serif;font-size:24px;margin-bottom:14px;
+}
+.pm-strip-links{display:flex;gap:10px;flex-wrap:wrap}
+.pm-strip-links a{
+  background:rgba(255,255,255,.12);color:#fff;text-decoration:none;
+  padding:9px 16px;border-radius:999px;font-size:14px;font-weight:600;
+  border:1px solid rgba(255,255,255,.25);
+}
+.pm-strip-links a:hover{background:rgba(255,255,255,.22)}
+/* BR banner */
+.pm-br-banner{
+  display:flex;align-items:center;gap:14px;
+  background:linear-gradient(135deg,#1B4D3E,#2A6B56);color:#fff;
+  border-radius:14px;padding:20px 24px;text-decoration:none;font-size:17px;
+  box-shadow:var(--shadow);
+}
+.pm-br-banner:hover{color:#fff;text-decoration:none;transform:translateY(-2px)}
+.pm-br-banner strong{font-weight:800}
+.pm-br-flag{font-size:30px}
+.pm-br-arrow{margin-left:auto;font-size:22px;font-weight:800}
+/* Newsletter */
+.pm-newsletter{padding:56px 0}
+.pm-newsletter-inner{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow);padding:44px 32px;text-align:center;max-width:640px;margin:0 auto;
+}
+.pm-newsletter-inner h2{
+  font-family:'Playfair Display',Georgia,serif;font-size:28px;margin-bottom:8px;
+}
+.pm-newsletter-inner p{color:var(--muted);margin-bottom:20px}
+.pm-newsletter-inner form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.pm-newsletter-inner input[type=email]{
+  padding:13px 16px;border:1px solid var(--line);border-radius:10px;
+  font-size:15px;min-width:260px;font-family:inherit;
+}
+.pm-newsletter-inner button{
+  padding:13px 26px;border:none;border-radius:10px;cursor:pointer;
+  background:var(--primary);color:#fff;font-weight:700;font-size:15px;
+}
+.pm-newsletter-inner button:hover{background:var(--primary-d)}
+.pm-newsletter-note{font-size:13px!important;margin:14px 0 0!important}
+/* Personalize banner */
+.pm-personalize{
+  background:linear-gradient(135deg,#F7EFE6 0%,#F1E4D4 100%);
+  border:1px solid var(--line);border-radius:14px;
+  padding:36px 30px;margin:48px 0 8px;text-align:center;
+}
+.pm-personalize h2{
+  font-family:'Playfair Display',Georgia,serif;font-size:28px;margin-bottom:8px;
+}
+.pm-personalize p{color:var(--muted);margin-bottom:20px}
+.pm-personalize-btn{
+  display:inline-block;background:var(--accent);color:#fff;font-weight:700;
+  padding:14px 30px;border-radius:10px;text-decoration:none;font-size:16px;
+}
+.pm-personalize-btn:hover{background:var(--accent-d)}
+/* Footer */
+.pm-footer{
+  border-top:1px solid var(--line);background:#F7F3EC;
+  padding:44px 0 32px;margin-top:64px;
+}
+.pm-footer-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;margin-bottom:28px;
+}
+.pm-footer h4{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:12px}
+.pm-footer ul{list-style:none;display:grid;gap:8px}
+.pm-footer a{color:var(--ink);text-decoration:none;font-size:14.5px}
+.pm-footer a:hover{color:var(--primary)}
+.pm-footer-brand{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:800;color:var(--primary);margin-bottom:8px}
+.pm-footer p{font-size:14px;color:var(--muted)}
+.pm-footer-bottom{
+  border-top:1px solid var(--line);padding-top:18px;
+  font-size:13px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
+}
+@media(max-width:760px){
+  .pm-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media print{.pm-newsletter{display:none!important}.pm-fav{display:none}}
+/* PM-FIX-v12b */
+/* PM-FIX-v12b: newsletter + personalize styles promoted site-wide */
+.pm-newsletter{padding:56px 0}
+.pm-newsletter-inner{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:44px 32px;text-align:center;max-width:640px;margin:0 auto}
+.pm-newsletter-inner h2{font-family:'Playfair Display',Georgia,serif;font-size:28px;margin-bottom:8px}
+.pm-newsletter-inner p{color:var(--muted);margin-bottom:20px}
+.pm-newsletter-inner form{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.pm-newsletter-inner input[type=email]{padding:13px 16px;border:1px solid var(--line);border-radius:10px;font-size:15px;min-width:260px;font-family:inherit}
+.pm-newsletter-inner button{padding:13px 26px;border:none;border-radius:10px;cursor:pointer;background:var(--primary);color:#fff;font-weight:700;font-size:15px}
+.pm-newsletter-inner button:hover{background:var(--primary-d)}
+.pm-personalize{background:linear-gradient(135deg,#F7EFE6 0%,#F1E4D4 100%);border:1px solid var(--line);border-radius:14px;padding:36px 30px;margin:48px 0 8px;text-align:center}
+.pm-personalize h2{font-family:'Playfair Display',Georgia,serif;font-size:28px;margin-bottom:8px}
+.pm-personalize p{color:var(--muted);margin-bottom:20px}
+.pm-personalize-btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:14px 30px;border-radius:10px;text-decoration:none;font-size:16px}
+.pm-personalize-btn:hover{background:var(--accent-d)}
 
-        font-size: 14px;
-        font-family: "DM Sans", "Roboto", sans-serif !important;
-        font-weight: 400;
-        -ms-text-size-adjust: 100%;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-
-    .page-not-found {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        padding: 0 16px;
-
-        img {
-            vertical-align: middle;
-            border-style: none;
-        }
-
-        .image {
-            max-width: 100%;
-            margin-bottom: 32px;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .title {
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 8px;
-            font-size: 24px;
-            line-height: 32px;
-            font-weight: 700;
-        }
-
-        .text {
-            text-align: center;
-            max-width: 650px;
-            margin-bottom: 24px;
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: 400;
-            color: #6D7081;
-        }
-
-
-    }
 </style>
+</head>
+<body>
 
+<header class="pm-header">
+  <div class="pm-header-inner">
+    <a class="pm-logo" href="index.html">PrintableMama</a>
+    <nav class="pm-nav" aria-label="Primary">
+      <a href="coloring-pages.html">Coloring</a>
+      <a href="calendars.html">Calendars</a>
+      <a href="planners-organization.html">Planners</a>
+      <a href="tools.html">Tools</a>
+      <a href="fancy-text-generator.html">Fancy Text</a>
+      <a href="typing-practice-sheets.html">Typing Practice</a>
+      <a href="party-and-fun.html">Party</a>
+      <a href="learning.html">Learning</a>
+      <a href="articles/index.html">Articles</a>
+      <a href="contest.html">Contest</a>
+      <a href="br/index.html">BR 🇧🇷</a>
+    </nav>
+  </div>
+</header>
+
+<section class="pm-hero">
+  <div class="wrap">
+    <span class="pm-hero-kicker"><span aria-hidden="true">🏆</span> October Coloring Contest</span>
+    <h1>Grab your crayons — the Fall Harvest contest is on.</h1>
+    <p class="pm-hero-sub">Print one of our fall coloring pages, color it your way, tape it to the fridge — then send us a photo. The coziest entry wins a printable prize bundle for the whole family.</p>
+    <div class="pm-hero-deadline">Entries close <strong>End: October 31, 2026, 23:59 GMT</strong></div>
+    <div class="pm-hero-ctas">
+      <a class="btn btn-primary" href="contest.html">Enter now</a>
+      <a class="btn btn-secondary" href="browse.html">See printables</a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <div class="wrap">
+
+    <section class="pm-section" aria-labelledby="featured-h">
+      <div class="pm-section-head">
+        <h2 id="featured-h">Featured printables</h2>
+        <a href="browse.html">Browse all →</a>
+      </div>
+      <div class="pm-grid">
+
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="feelings-wheel-printable.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <a class="pm-thumb" href="feelings-wheel-printable.html"><img src="images/hero-teachers.jpg" alt="Feelings Wheel printable preview" loading="lazy"></a>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="feelings-wheel-printable.html">Feelings Wheel Printable</a></h3>
+            <div class="pm-stats"><span>18.2k downloads</span><span>★ 4.9</span><span>Learning</span></div>
+          </div>
+        </article>
+
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="invoice-maker.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <a class="pm-thumb" href="invoice-maker.html"><img src="images/hero-tools.jpg" alt="Invoice Maker tool preview" loading="lazy"></a>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="invoice-maker.html">Free Invoice Maker</a></h3>
+            <div class="pm-stats"><span>9.7k downloads</span><span>★ 4.8</span><span>Business</span></div>
+          </div>
+        </article>
+
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="january-2027-calendar-printable.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <a class="pm-thumb" href="january-2027-calendar-printable.html"><img src="images/hero-calendars.jpg" alt="January 2027 calendar printable preview" loading="lazy"></a>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="january-2027-calendar-printable.html">January 2027 Calendar</a></h3>
+            <div class="pm-stats"><span>21.5k downloads</span><span>★ 4.9</span><span>Calendars</span></div>
+          </div>
+        </article>
+
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="bingo-card-generator.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <a class="pm-thumb" href="bingo-card-generator.html"><img src="images/hero-party.jpg" alt="Bingo Card Generator preview" loading="lazy"></a>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="bingo-card-generator.html">Bingo Card Generator</a></h3>
+            <div class="pm-stats"><span>14.3k downloads</span><span>★ 4.8</span><span>Party &amp; Fun</span></div>
+          </div>
+        </article>
+
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="chore-chart-printable.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <a class="pm-thumb" href="chore-chart-printable.html"><img src="images/card-trackers.jpg" alt="Chore Chart printable preview" loading="lazy"></a>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="chore-chart-printable.html">Chore Chart Printable</a></h3>
+            <div class="pm-stats"><span>16.8k downloads</span><span>★ 4.9</span><span>Kids</span></div>
+          </div>
+        </article>
+
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="color-by-number-printable.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <a class="pm-thumb" href="color-by-number-printable.html"><img src="images/hero-coloring.jpg" alt="Color by Number printable preview" loading="lazy"></a>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="color-by-number-printable.html">Color by Number</a></h3>
+            <div class="pm-stats"><span>22.1k downloads</span><span>★ 5.0</span><span>Coloring</span></div>
+          </div>
+        </article>
+
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="cv-maker.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <a class="pm-thumb" href="cv-maker.html"><img src="images/card-business.jpg" alt="Free CV Maker preview" loading="lazy"></a>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="cv-maker.html">Free CV Maker</a></h3>
+            <div class="pm-stats"><span>11.9k downloads</span><span>★ 4.8</span><span>Business</span></div>
+          </div>
+        </article>
+
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="gift-tag-maker.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <a class="pm-thumb" href="gift-tag-maker.html"><img src="images/card-party.jpg" alt="Gift Tag Maker preview" loading="lazy"></a>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="gift-tag-maker.html">Gift Tag Maker</a></h3>
+            <div class="pm-stats"><span>8.4k downloads</span><span>★ 4.7</span><span>Party &amp; Fun</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PM-DESIGN-v12 personalize CTA snippet -->
+    <aside class="pm-personalize" id="personalize">
+      <div class="pm-personalize-inner">
+        <h2><span aria-hidden="true">✏️</span> Personalize it</h2>
+        <p>Add names, dates &amp; colors before you print — make it yours in seconds.</p>
+        <a class="pm-personalize-btn" href="#personalize">Start personalizing</a>
+      </div>
+    </aside>
+
+    <section class="pm-section" aria-labelledby="tools-h">
+      <div class="pm-section-head">
+        <h2 id="tools-h">Popular tools</h2>
+        <a href="tools.html">All tools →</a>
+      </div>
+      <div class="pm-tools-grid">
+        <a class="pm-tool-card" href="fancy-text-generator.html"><span class="pm-tool-icon">F</span><h3>Fancy Text Generator</h3><p>7.3k uses · ★ 4.9</p></a>
+        <a class="pm-tool-card" href="invoice-maker.html"><span class="pm-tool-icon">I</span><h3>Invoice Maker</h3><p>9.7k uses · ★ 4.8</p></a>
+        <a class="pm-tool-card" href="cv-maker.html"><span class="pm-tool-icon">C</span><h3>CV Maker</h3><p>11.9k uses · ★ 4.8</p></a>
+        <a class="pm-tool-card" href="bingo-card-generator.html"><span class="pm-tool-icon">B</span><h3>Bingo Card Generator</h3><p>14.3k uses · ★ 4.8</p></a>
+        <a class="pm-tool-card" href="crossword-generator.html"><span class="pm-tool-icon">C</span><h3>Crossword Generator</h3><p>5.1k uses · ★ 4.7</p></a>
+        <a class="pm-tool-card" href="word-search-generator.html"><span class="pm-tool-icon">W</span><h3>Word Search Generator</h3><p>8.9k uses · ★ 4.8</p></a>
+        <a class="pm-tool-card" href="qr-code-generator.html"><span class="pm-tool-icon">Q</span><h3>QR Code Generator</h3><p>6.6k uses · ★ 4.9</p></a>
+        <a class="pm-tool-card" href="sticker-maker.html"><span class="pm-tool-icon">S</span><h3>Sticker Maker</h3><p>4.8k uses · ★ 4.7</p></a>
+        <a class="pm-tool-card" href="name-tracing-generator.html"><span class="pm-tool-icon">N</span><h3>Name Tracing Generator</h3><p>7.7k uses · ★ 4.9</p></a>
+        <a class="pm-tool-card" href="flashcard-maker.html"><span class="pm-tool-icon">F</span><h3>Flashcard Maker</h3><p>6.2k uses · ★ 4.8</p></a>
+        <a class="pm-tool-card" href="printable-eye-chart.html"><span class="pm-tool-icon">E</span><h3>Printable Eye Chart</h3><p>3.5k uses · ★ 4.6</p></a>
+        <a class="pm-tool-card" href="certificate-maker.html"><span class="pm-tool-icon">C</span><h3>Certificate Maker</h3><p>5.9k uses · ★ 4.8</p></a>
+        <a class="pm-tool-card" href="typing-practice-sheets.html"><span class="pm-tool-icon">T</span><h3>Typing Practice Sheets</h3><p>Free printable typing worksheets for kids &amp; students</p></a>
+      </div>
+    </section>
+
+    <section class="pm-section" aria-label="Printables in Portuguese">
+      <a class="pm-br-banner" href="br/index.html"><span class="pm-br-flag" aria-hidden="true">🇧🇷</span><span><strong>Falamos português!</strong> Desenhos para colorir e atividades grátis em português.</span><span class="pm-br-arrow" aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="pm-section" aria-labelledby="blog-h">
+      <div class="pm-section-head">
+        <h2 id="blog-h">From the blog</h2>
+        <a href="articles/index.html">All articles →</a>
+      </div>
+      <div class="pm-grid">
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="articles/how-chore-charts-actually-work.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="articles/how-chore-charts-actually-work.html">Chore Charts That Work (Without the Nagging)</a></h3>
+            <p class="pm-article-excerpt">Chore charts work when they are simple, visual, and rewarding. Here is the no-nagging system that gets kids doing chores, plus free printables.</p>
+            <div class="pm-stats"><span>6 min read</span><span>★ 4.9</span><span>Parenting</span></div>
+          </div>
+        </article>
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="articles/meal-planning-for-busy-moms.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="articles/meal-planning-for-busy-moms.html">20-Minute Sunday Meal Planning for Moms</a></h3>
+            <p class="pm-article-excerpt">Ditch the 5pm dinner panic. The 20-minute Sunday method: 5 dinners, one grocery list, zero stress — with a free meal planner printable.</p>
+            <div class="pm-stats"><span>5 min read</span><span>★ 4.8</span><span>Home</span></div>
+          </div>
+        </article>
+        <article class="pm-card">
+          <button class="pm-fav" data-fav="articles/birthday-party-on-budget.html" aria-pressed="false" aria-label="Save to favorites"><span class="heart-empty" aria-hidden="true">♡</span><span class="heart-full" aria-hidden="true">♥</span></button>
+          <div class="pm-body">
+            <div class="pm-avatar-row"><span class="pm-avatar">PM</span> PrintableMama</div>
+            <h3 class="pm-title"><a href="articles/birthday-party-on-budget.html">How to Throw a Great Birthday Party on $50</a></h3>
+            <p class="pm-article-excerpt">A $50 birthday party kids actually love: free invitations, one big banner, pizza, and games that cost nothing. Full budget breakdown inside.</p>
+            <div class="pm-stats"><span>7 min read</span><span>★ 4.9</span><span>Party</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pm-strip" aria-labelledby="new-h">
+      <h2 id="new-h">New this week</h2>
+      <div class="pm-strip-links">
+        <a href="feelings-wheel-printable.html">Feelings Wheel</a>
+        <a href="cv-maker.html">CV Maker</a>
+        <a href="january-2027-calendar-printable.html">January 2027 Calendar</a>
+        <a href="invoice-maker.html">Invoice Maker</a>
+        <a href="gift-tag-maker.html">Gift Tag Maker</a>
+        <a href="color-by-number-printable.html">Color by Number</a>
+      </div>
+    </section>
+
+    <!-- PM-DESIGN-v12 newsletter snippet -->
+    <section class="pm-newsletter">
+      <div class="pm-newsletter-inner">
+        <h2>Get new printables every week</h2>
+        <p>One short email, every Monday morning. The week's best printables, no fluff.</p>
+        <!-- OWNER: replace STORE_EMAIL with your email -->
+        <form action="https://formsubmit.co/STORE_EMAIL" method="POST">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New PrintableMama subscriber">
+          <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit">Join free</button>
+        </form>
+        <p class="pm-newsletter-note">No spam, unsubscribe anytime.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="pm-footer">
+  <div class="wrap">
+    <div class="pm-footer-grid">
+      <div>
+        <div class="pm-footer-brand">PrintableMama</div>
+        <p>Free printables for moms &amp; teachers — designed to print beautifully on any home printer. Download, print, and stick it on the fridge.</p>
+      </div>
+      <div>
+        <h4>Printables</h4>
+        <ul>
+          <li><a href="coloring-pages.html">Coloring Pages</a></li>
+          <li><a href="calendars.html">Calendars</a></li>
+          <li><a href="planners-organization.html">Planners</a></li>
+          <li><a href="kids.html">Kids</a></li>
+          <li><a href="teachers.html">Teachers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="tools.html">All Tools</a></li>
+          <li><a href="invoice-maker.html">Invoice Maker</a></li>
+          <li><a href="cv-maker.html">CV Maker</a></li>
+          <li><a href="bingo-card-generator.html">Bingo Generator</a></li>
+          <li><a href="fancy-text-generator.html">Fancy Text</a></li>
+          <li><a href="typing-practice-sheets.html">Typing Practice</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="browse.html">Browse All</a></li>
+          <li><a href="articles/index.html">Blog</a></li>
+          <li><a href="contest.html">Contest</a></li>
+          <li><a href="party-and-fun.html">Party &amp; Fun</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="br/index.html">BR 🇧🇷</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pm-footer-bottom">
+      <span>&copy; 2026 PrintableMama. Made with care.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* PM-DESIGN-v12 */
+/* PrintableMama favorites — v12 foundation */
+(function(){
+  'use strict';
+  var KEY = 'pm_favs';
+
+  function readFavs(){
+    try{
+      var raw = localStorage.getItem(KEY);
+      var arr = raw ? JSON.parse(raw) : [];
+      return Array.isArray(arr) ? arr : [];
+    }catch(e){
+      return [];
+    }
+  }
+
+  function writeFavs(arr){
+    try{
+      localStorage.setItem(KEY, JSON.stringify(arr));
+      return true;
+    }catch(e){
+      return false;
+    }
+  }
+
+  function pageId(){
+    return location.pathname.split('/').pop() || 'index.html';
+  }
+
+  function init(){
+    var favs = readFavs();
+    var buttons = document.querySelectorAll('.pm-fav');
+    buttons.forEach(function(btn){
+      var target = btn.getAttribute('data-fav') || pageId();
+      if (favs.indexOf(target) !== -1){
+        btn.classList.add('saved');
+        btn.setAttribute('aria-pressed', 'true');
+      }
+      btn.setAttribute('aria-label', btn.classList.contains('saved') ? 'Remove from favorites' : 'Save to favorites');
+      btn.addEventListener('click', function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var list = readFavs();
+        var i = list.indexOf(target);
+        var saved;
+        if (i === -1){
+          list.push(target);
+          saved = true;
+        }else{
+          list.splice(i, 1);
+          saved = false;
+        }
+        if (!writeFavs(list)) { return; }
+        btn.classList.toggle('saved', saved);
+        btn.setAttribute('aria-pressed', String(saved));
+        btn.setAttribute('aria-label', saved ? 'Remove from favorites' : 'Save to favorites');
+      });
+    });
+  }
+
+  if (document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  }else{
+    init();
+  }
+})();
+</script>
+</body>
 </html>
