@@ -1,5 +1,6 @@
 # PrintableMama.com — auto-deploy to shared hosting via FTP
 # SAFE: upload-only. Never deletes files on the server that are not in the repo.
+# HARDENED 2026-10-17: concurrency guard + explicit no-delete + post-deploy smoke test.
 
 name: Deploy to shared hosting (FTP)
 
@@ -11,6 +12,9 @@ jobs:
   ftp-deploy:
     name: FTP Deploy (upload-only)
     runs-on: ubuntu-latest
+    concurrency:
+      group: printablemama-deploy
+      cancel-in-progress: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,8 +28,18 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /public_html/
-          dangerous-clean-slate: false
+          dangerous-clean-slate: false   # NEVER delete server files
           exclude: |
             **/.git*
             **/.github/**
             README.md
+
+      - name: Smoke test live site
+        run: |
+          sleep 20  # allow FTP to settle
+          for i in 1 2 3; do
+            CODE=$(curl -s -o /tmp/pmhome.html -w "%{http_code}" -A "Mozilla/5.0" https://printablemama.com/)
+            if [ "$CODE" = "200" ] && grep -qi "printablemama\|printable" /tmp/pmhome.html; then echo "SMOKE OK"; exit 0; fi
+            sleep 15
+          done
+          echo "SMOKE FAILED (last code $CODE)"; exit 1
