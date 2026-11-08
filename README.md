@@ -1,3 +1,13 @@
+![printablemama.com](assets/social-preview.png)
+
+# PrintableMama — Free Printables for Organized Living
+
+Live: **https://printablemama.com**
+
+Free printables for busy moms, teachers and small-business owners — calendars, planners, coloring pages, charts, tools and more. 200+ free printables, no sign-up, no watermarks.
+
+---
+
 # ⚠️ DO NOT USE HOSTINGER'S GIT DEPLOY FOR THIS SITE — EVER.
 
 On 16 Oct 2026 Hostinger's native Git auto-deploy wiped an entire WordPress installation TWICE on another site (it deploys the repo over `public_html`, deleting files the repo doesn't own). The Hostinger → Git connection must stay disconnected for ALL sites.
